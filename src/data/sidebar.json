@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Films",
+        "icon": "bi-folder-fill",
+        "childrens": 
+            {
+                "title": "Movie Name",
+                "icon": "bi-film",
+                "path": "/films"
+            }
+        
+    },
+    {
+        "title": "People",
+        "icon": "bi-folder-fill",
+        "childrens": 
+            {
+                "title": "People List",
+                "icon": "bi-people-fill",
+                "path": "/people"
+            }
+        
+    },
+    {
+        "title": "Planets",
+        "icon": "bi-folder-fill",
+        "childrens": 
+            {
+                "title": "Planets List",
+                "icon" : "bi-globe2",
+                "path": "/planets"
+            }
+        
+    },
+    {
+        "title": "Species",
+        "icon": "bi-folder-fill",
+        "childrens": 
+            {
+                "title": "Species List",
+                "icon" : "bi-person-fill",
+                "path": "/species"
+            }
+        
+    },
+    {
+        "title": "Starships",
+        "icon": "bi-folder-fill",
+        "childrens": 
+            {
+                "title": "Starships List",
+                "icon" : "bi-rocket-fill",
+                "path": "/starships"
+            }
+        
+    },
+    {
+        "title": "Vehicles",
+        "icon": "bi-folder-fill",
+        "childrens": 
+            {
+                "title": "Vehicles List",
+                "icon" :"bi-truck",
+                "path": "/vehicles"
+            }
+        
+    }
+]
