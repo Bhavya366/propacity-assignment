@@ -57,8 +57,8 @@ const PlanetList = ({ planets, gridview }) => {
                         <thead className='thead'>
                             <tr>
                                 <th>Name</th>
-                                <th>gravity</th>
-                                <th>Release Date</th>
+                                <th>Gravity</th>
+                                <th>Climate</th>
                                 <th></th>
                             </tr>
                         </thead>

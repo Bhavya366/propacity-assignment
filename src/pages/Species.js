@@ -58,7 +58,7 @@ const SpiecesList = ({ spieces, gridview }) => {
                             <tr>
                                 <th>Name</th>
                                 <th>Language</th>
-                                <th>Release Date</th>
+                                <th>Lifespan</th>
                                 <th></th>
                             </tr>
                         </thead>

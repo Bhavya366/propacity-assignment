@@ -57,8 +57,8 @@ const VehiclesList = ({ vehicles, gridview }) => {
                         <thead className='thead'>
                             <tr>
                                 <th>Name</th>
-                                <th>speed</th>
-                                <th>Release Date</th>
+                                <th>Speed</th>
+                                <th>Model</th>
                                 <th></th>
                             </tr>
                         </thead>

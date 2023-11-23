@@ -57,8 +57,8 @@ const StarshipsList = ({ starships, gridview }) => {
                         <thead className='thead'>
                             <tr>
                                 <th>Name</th>
-                                <th>Language</th>
-                                <th>Release Date</th>
+                                <th>Model</th>
+                                <th>Speed</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -66,8 +66,8 @@ const StarshipsList = ({ starships, gridview }) => {
                             {starships.map((starship, index) => (
                                 <tr key={index} className='table-row'>
                                     <td >{starship.name}</td>
-                                    <td >{starship.Language}</td>
-                                    <td >{starship.lifespan}</td>
+                                    <td >{starship.Model}</td>
+                                    <td >{starship.Speed}</td>
                                     <td > <i class="bi bi-three-dots-vertical"  onClick={() => handleDetailsClick(index)}></i></td>
                                 </tr>
                             ))}
@@ -92,8 +92,8 @@ const Starships = () => {
                 const starshipsData = response.data.results.map((starship) => ({
                     name: starship.name,
                     homeworld: `https://swapi.dev/api/starships/2/`, // Placeholder image, replace with actual poster URL
-                    lifespan: starship.average_lifespan,
-                    Language: starship.Language,
+                    Speed: starship.max_atmosphering_speed,
+                    Model: starship.model,
                 }));
                 setstarships(starshipsData.slice(0,6));
             } catch (error) {

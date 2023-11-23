@@ -57,8 +57,8 @@ const PeopleList = ({ peoples, gridview }) => {
                         <thead className='thead'>
                             <tr>
                                 <th>Name</th>
-                                <th>Director</th>
-                                <th>Release Date</th>
+                                <th>Birthyear</th>
+                                <th>Height</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -66,8 +66,8 @@ const PeopleList = ({ peoples, gridview }) => {
                             {peoples.map((people, index) => (
                                 <tr key={index} className='table-row'>
                                     <td >{people.name}</td>
-                                    <td >{people.director}</td>
                                     <td >{people.birthyear}</td>
+                                    <td >{people.height}</td>
                                     <td > <i class="bi bi-three-dots-vertical"  onClick={() => handleDetailsClick(index)}></i></td>
                                 </tr>
                             ))}
@@ -93,7 +93,7 @@ const People = () => {
                     name: people.name,
                     species: `https://via.placeholder.com/150`, // Placeholder image, replace with actual species URL
                     birthyear: people.birth_year,
-                    
+                    height : people.height,
                 }));
                 setpeoples(peoplesData.slice(0,6));
             } catch (error) {
